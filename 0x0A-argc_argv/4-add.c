@@ -2,18 +2,19 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
   *check_num - check - string there are digit
   *@str: array str
-  *
   *Return: Always 0
   */
-int check_numb(char *str)
+
+int check_num(char *str)
 {
 	/*Declaring variables*/
 	unsigned int count;
 
-	count = 0
+	count = 0;
 	while (count < strlen(str)) /*count string*/
 
 	{
@@ -21,7 +22,6 @@ int check_numb(char *str)
 		{
 			return (0);
 		}
-
 		count++;
 	}
 	return (1);
@@ -58,7 +58,6 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-
 		count++;
 	}
 
